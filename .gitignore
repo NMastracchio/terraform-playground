@@ -1,0 +1,26 @@
+## Terraform Core Files
+# Ignore local state files and provider plugins.
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+*.tfplan
+
+## Variable Files
+# Never commit variable files containing sensitive data.
+*.tfvars
+*.tfvars.json
+
+## Override Files
+# Ignore local override files.
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+## General
+# Ignore common OS and editor-specific files.
+.DS_Store
+.vscode/
+.idea/
+Thumbs.db
