@@ -24,3 +24,7 @@ override.tf.json
 .vscode/
 .idea/
 Thumbs.db
+
+## Build
+# Ignore the build file
+RemoteClient.zip

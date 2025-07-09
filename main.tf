@@ -10,6 +10,10 @@ terraform {
       source  = "kreuzwerker/docker"
       version = "~> 3.0.1"
     }
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0"
+    }
     local = {
       source  = "hashicorp/local"
       version = "2.5.1"
@@ -19,6 +23,10 @@ terraform {
 
 provider "docker" {
   host = "unix:///Users/nmastracchio/.docker/run/docker.sock"
+}
+
+provider "aws" {
+  region = "us-east-1" # Or your preferred region
 }
 
 ################################################################################
